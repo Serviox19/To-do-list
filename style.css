@@ -11,7 +11,16 @@
   font-weight: bold;
 }
 
-.btn btn-danger {
+.btn-delete {
+  text-align: center;
   display: block;
 }
 
+.btn-done {
+  text-align: center;
+  display: block;
+}
+
+.button-holder {
+  text-align: center;
+}
