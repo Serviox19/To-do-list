@@ -6,9 +6,9 @@ $(document).ready(function () {
 
     var newRow = $("<tr>");
     var wordTd = $("<td>").append(newWord);
-    var deleteBtn = $("<button>").append("Delete");
+    var deleteBtn = $("<button>").append("<span class='glyphicon glyphicon-trash'></span>");
     var deleteTd = $("<td>").append(deleteBtn);
-    var doneBtn = $("<button>").append("Done ?");
+    var doneBtn = $("<button>").append("<span class='glyphicon glyphicon-ok'></span>");
     var doneTD = $("<td>").append(doneBtn);
     
     newRow.append(wordTd);
@@ -30,7 +30,8 @@ $(document).ready(function () {
   });
 
   $("table").on("click", ".btn-primary", function() {
-    $(this).parent().parent().css("text-decoration", "line-through");
+    $(this).parent().parent().css("text-decoration", "line-through")
+    $(this).remove();
   });
 
 });
