@@ -19,23 +19,19 @@
   </div>
 </nav> <!-- END NAV -->
 
-<div class="container">
-  <div class="row">
+<div class="container-fluid">
+  <div class="row-fluid">
     <div class="col-md-8">
-      <table class="table table-hover table table-bordered">
+      <table class="table table-hover table-bordered">
          <thead>
            <tr class="header">
             <td>Task-to-Do</td>
-            <td>Done?</td>
             <td>Delete</td>
+            <td>Done ?</td>
            </tr>
          </thead>
          <tbody>
-           <tr>
-             <td>Remember to walk the dog, and take out the trash!</td>
-             <td><div class="btn-done"><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button></div></td>
-             <td><div class="btn-delete"><button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button></div></td>
-           </tr>
+           
          </tbody>
       </table>
     </div>
@@ -47,11 +43,11 @@
       </div><!-- END PANEL HEADING -->
       <div class="panel-body">
         <div class="well">
-          <textarea class="form-control" rows="3">
-            
-          </textarea><br />
+            <form id="inputTask">
+              <input type="text" placeholder="Type New Task Here!" id="newWord"> <br />
+            </form>
           <div class="button-holder">
-            <button type="submit" class="btn btn-success submit-task"><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span></button>
+            <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span></button>
           </div>
         </div><!-- END WELL-->
       </div> <!-- END PANEL BODY -->
@@ -72,6 +68,6 @@
 
 <!-- JavaScript and jQuery -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="/js/index.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
