@@ -9,6 +9,7 @@
 .header {
   text-align: center;
   font-weight: bold;
+  background-color: #339999;
 }
 
 .btn-delete {
@@ -22,5 +23,9 @@
 }
 
 .button-holder {
+  text-align: center;
+}
+
+.aside h3 {
   text-align: center;
 }

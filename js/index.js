@@ -16,6 +16,8 @@ $(document).ready(function () {
     newRow.append(doneTD);
     newRow.append()
     $("tbody").append(newRow);
+    $("td").css("text-align", "center");
+    $("tbody td:first-child").css({ "font-family": "Verdana serif", "font-size": "1.2em", "font-weight": "bold", })
 
     deleteBtn.addClass("btn btn-danger");
     doneBtn.addClass("btn btn-primary")
@@ -27,5 +29,8 @@ $(document).ready(function () {
     $(this).parent().parent().remove();
   });
 
+  $("table").on("click", ".btn-primary", function() {
+    $(this).parent().parent().css("text-decoration", "line-through");
+  });
 
 });

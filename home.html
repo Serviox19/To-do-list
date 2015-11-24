@@ -11,17 +11,21 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default nav">
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <h2>To-Do-List<br><h6>"Keeping Your Tasks in One Place"</h6></h2>
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="images/checklist.png">
+      </a>
     </div>
+      <h3>Organize Your Everyday Tasks!</h3>
   </div>
 </nav> <!-- END NAV -->
 
 <div class="container-fluid">
   <div class="row-fluid">
-    <div class="col-md-8">
+    <div class="col-md-1"></div>
+    <div class="col-md-7">
       <table class="table table-hover table-bordered">
          <thead>
            <tr class="header">
@@ -36,16 +40,18 @@
       </table>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-3 aside">
       <div class="panel panel-primary">
       <div class="panel-heading">
         <h3 class="panel-title">Add New Task</h3>
       </div><!-- END PANEL HEADING -->
       <div class="panel-body">
         <div class="well">
-            <form id="inputTask">
-              <input type="text" placeholder="Type New Task Here!" id="newWord"> <br />
-            </form>
+            <form>
+              <textarea class="form-control" rows="3" id="newWord">
+                
+              </textarea>
+            </form> <br />
           <div class="button-holder">
             <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span></button>
           </div>
